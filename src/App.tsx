@@ -3,8 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  var background_colour = process.env.REACT_APP_BACKGROUNDCOLOUR || "purple";
   return (
-    <div className="App">
+    <div className="App" style={{background:background_colour}}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
